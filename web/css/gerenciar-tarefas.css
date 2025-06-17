@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header{
+    background-color: #0056b3;
+    width: auto;
+    height: 10vh;
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3;
+}
+
+.kanban {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.coluna {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.coluna h2 {
+  text-align: center;
+}
+
+.tarefa {
+  background-color: #eaeaea;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.tarefa p {
+  margin: 4px 0;
+}
+
+.botoes {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+select {
+  width: 100%;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 4px;
+}

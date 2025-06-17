@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerenciar Tarefas</title>
+  <link rel="stylesheet" href="../css/gerenciar-tarefas.css" />
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Tarefas</h1>
+        <a href="./index.html">
+            <button class="um">Cadastrar Usuário</button>
+        </a>
+        <a href="./cadastro-tarefa.html">
+            <button class="um">Cadastrar Tarefa</button>
+        </a>
+        <a href="./gerenciar-tarefas.html">
+            <button class="um">Gerenciar Tarefas</button>
+        </a>
+    </header>
+
+  <div class="kanban">
+    <div class="coluna" id="a-fazer">
+      <h2>A Fazer</h2>
+      <div class="tarefas" id="tarefas-a-fazer"></div>
+    </div>
+    <div class="coluna" id="fazendo">
+      <h2>Fazendo</h2>
+      <div class="tarefas" id="tarefas-fazendo"></div>
+    </div>
+    <div class="coluna" id="pronto">
+      <h2>Pronto</h2>
+      <div class="tarefas" id="tarefas-pronto"></div>
+    </div>
+  </div>
+
+  <script src="../js/gerenciar-tarefas.js"></script>
+</body>
+</html>
