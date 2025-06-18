@@ -73,3 +73,62 @@ No desenvolvimento dessa prova você deverá considerar os seguintes padrões:
 
 
 
+# 📝 Sistema de Gerenciamento de Tarefas (To Do List)
+
+Este projeto é uma aplicação back-end desenvolvida para gerenciar tarefas de setores de uma indústria, com funcionalidades de cadastro, edição, exclusão e atualização de status das tarefas no formato **To Do List** (A Fazer, Fazendo, Pronto).
+
+## 🚀 Tecnologias Utilizadas
+
+- **Node.js** – Ambiente de execução JavaScript.
+- **Express** – Framework web para Node.js.
+- **Prisma** – ORM para integração com o banco de dados.
+- **MySQL (via XAMPP)** – Sistema de Gerenciamento de Banco de Dados.
+- **dotenv** – Para gerenciamento de variáveis de ambiente.
+- **Cors** – Middleware para permitir requisições entre diferentes origens.
+- **VSCode** – Editor de código utilizado no desenvolvimento.
+- **Insomnia** – Ferramenta para testar requisições HTTP.
+
+---
+
+📦 Instalação e Configuração
+1. Abrir um terminal CTRL + ' e dar os comandos a seguir para iniciar o projeto:
+```
+cd api
+```
+
+```
+npm init -y
+```
+
+```
+npm i express cors dotenv
+```
+
+- 1.1 Caso não haja dentro do projeto um arquivo chamado .env crie-o e adcione o seguinte código dentro dele:
+```
+DATABASE_URL="mysql://root@localhost:3306/to_do"
+PORT=3810
+```
+
+- 1.2 Caso necessario Caso seja necessário remover o banco de dados para testar a criação novamente exclua a pasta migrations com o seguinte comando:
+```
+prisma migrate reset
+```
+
+depois utilize este comando para realizar novamente a migração:
+```
+npx prisma migrate dev --name init
+```
+
+2. Após isso use o seguinte comando para verificar se a api está funcionando:
+```
+npx nodemon
+```
+
+Se a api estiver funcionando já será possivel fazer o cadastro do usuário e das tarefas e gerenciar as tarefas dentro do Front end
+
+## DER
+![DER](./docs/wireframes/Captura%20de%20tela%202025-06-18%20105534.png)
+
+## DU
+![DCU](./docs/wireframes/Captura%20de%20tela%202025-06-18%20105629.png)
